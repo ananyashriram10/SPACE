@@ -5,7 +5,7 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 source "$ROOT/baselines/use_venv.sh"
 CHECKPOINT="${CHECKPOINT:-$ROOT/space-models/sd/space-Andy_Warhol.safetensors}"
-SAVE_PATH="${SAVE_PATH:-$ROOT/results/fid/space-Andy_Warhol}"
+SAVE_PATH="${SAVE_PATH:-$ROOT/results/fid/andy_warhol/space}"
 FID_N="${FID_N:-30000}"
 DEVICE="${DEVICE:-cuda:0}"
 "$PYTHON_BIN" "$ROOT/evalscripts/generate_fid_samples.py" \
