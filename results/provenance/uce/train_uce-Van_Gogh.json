@@ -1,0 +1,15 @@
+{
+  "created_utc": "2026-04-23T19:06:56.419880+00:00",
+  "method": "UCE",
+  "artist": "Van Gogh",
+  "run_type": "official-paper",
+  "official_repo_url": "https://github.com/rohitgandikota/unified-concept-editing",
+  "official_repo_dir": "/workspace/space-claude-implementation/baselines/external/unified-concept-editing",
+  "official_repo_commit": "7c724d9d7d19190e9bd33fe62fb656f1df87cd8e",
+  "official_repo_dirty_status": "M trainscripts/uce_sd_erase.py",
+  "command": "python trainscripts/uce_sd_erase.py --model_id CompVis/stable-diffusion-v1-4 --edit_concepts Van Gogh --guide_concepts art --preserve_concepts Monet; Rembrandt; Warhol --device cuda:0 --concept_type art --erase_scale 1 --preserve_scale 1 --lamb 0.5 --expand_prompts false --save_dir /workspace/space-claude-implementation/baseline-models/uce --exp_name uce-Van_Gogh",
+  "outputs": [
+    "/workspace/space-claude-implementation/baseline-models/uce/uce-Van_Gogh.safetensors"
+  ],
+  "prompt_manifest": null
+}

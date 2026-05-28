@@ -1,0 +1,10 @@
+{
+  "method": "SPACE",
+  "artist": "Van Gogh",
+  "run_type": "research-method",
+  "checkpoint": "space-models/sd/space-Van_Gogh.safetensors",
+  "outputs": [
+    "results/space/space-Van_Gogh"
+  ],
+  "prompts": "data/vangogh_prompts.csv"
+}

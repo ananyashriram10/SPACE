@@ -1,0 +1,16 @@
+{
+  "created_utc": "2026-04-23T14:59:26.688077+00:00",
+  "method": "Concept Ablation",
+  "artist": "Van Gogh",
+  "run_type": "official-paper",
+  "official_repo_url": "https://github.com/nupurkmr9/concept-ablation",
+  "official_repo_dir": "/workspace/space-claude-implementation/baselines/external/concept-ablation",
+  "official_repo_commit": "c11fb1bdc7cd97ea65877b0d41722f5e3ef2561f",
+  "official_repo_dirty_status": "M compvis/src/filter.py\n?? compvis/ldm/__pycache__/\n?? compvis/ldm/models/__pycache__/\n?? compvis/ldm/models/diffusion/__pycache__/\n?? compvis/ldm/models/diffusion/dpm_solver/__pycache__/\n?? compvis/ldm/modules/__pycache__/\n?? compvis/ldm/modules/diffusionmodules/__pycache__/\n?? compvis/ldm/modules/distributions/__pycache__/\n?? compvis/ldm/modules/encoders/__pycache__/\n?? compvis/src/__pycache__/",
+  "command": "python sample.py --ckpt /workspace/space-claude-implementation/baseline-assets/concept_ablation/pretrained_models/sd-v1-4.ckpt --delta_ckpt /workspace/space-claude-implementation/baseline-models/concept_ablation_compvis/official_weights/concept_ablation-Van_Gogh.ckpt --from-file /workspace/space-claude-implementation/baselines/cache/official_prompts/concept_ablation_compvis/concept_ablation-Van_Gogh.txt --ddim_steps 100 --scale 6.0 --ddim_eta 1.0 --outdir /workspace/space-claude-implementation/results/concept_ablation_compvis/concept_ablation-Van_Gogh --n_samples 1 --n_copies 1 --skip_grid --metadata --seed 42",
+  "outputs": [
+    "/workspace/space-claude-implementation/baseline-models/concept_ablation_compvis/official_weights/concept_ablation-Van_Gogh.ckpt",
+    "/workspace/space-claude-implementation/results/concept_ablation_compvis/concept_ablation-Van_Gogh"
+  ],
+  "prompt_manifest": "/workspace/space-claude-implementation/baselines/cache/official_prompts/concept_ablation_compvis/concept_ablation-Van_Gogh.manifest.json"
+}

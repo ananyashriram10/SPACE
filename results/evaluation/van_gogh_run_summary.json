@@ -1,0 +1,34 @@
+{
+  "artist": "Van Gogh",
+  "expected_count": 50,
+  "counts": {
+    "prompts": 50,
+    "vanilla_images": 50,
+    "esd_x_images": 50,
+    "uce_images": 50,
+    "space_images": 50,
+    "ca_images": 50
+  },
+  "paths": {
+    "prompts": "data/vangogh_prompts.csv",
+    "vanilla": "results/baseline/vangogh",
+    "esd_x": "results/erased/vangogh",
+    "uce_checkpoint": "baseline-models/uce/uce-Van_Gogh.safetensors",
+    "uce_images": "results/uce/uce-Van_Gogh",
+    "space_checkpoint": "space-models/sd/space-Van_Gogh.safetensors",
+    "space_images": "results/space/space-Van_Gogh",
+    "ca_official_delta": "baseline-models/concept_ablation_compvis/official_weights/concept_ablation-Van_Gogh.ckpt",
+    "ca_trained_delta": "baseline-models/concept_ablation_compvis/deltas/concept_ablation-Van_Gogh.ckpt",
+    "ca_images": "results/concept_ablation_compvis/concept_ablation-Van_Gogh/samples",
+    "metrics_csv": "results/evaluation/metrics.csv",
+    "ablation_table_tex": "results/evaluation/ablation_table.tex",
+    "comparison_bars": "results/evaluation/comparison_bars.png",
+    "comparison_png": "results/comparisons/van_gogh.png",
+    "comparison_pdf": "results/comparisons/van_gogh.pdf"
+  },
+  "ca_delta_used": "baseline-models/concept_ablation_compvis/official_weights/concept_ablation-Van_Gogh.ckpt",
+  "commit": "",
+  "push_status": "not requested",
+  "status": "ok",
+  "errors": []
+}

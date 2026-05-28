@@ -1,0 +1,12 @@
+diff --git a/trainscripts/uce_sd_erase.py b/trainscripts/uce_sd_erase.py
+index 77f7a2b..f170396 100644
+--- a/trainscripts/uce_sd_erase.py
++++ b/trainscripts/uce_sd_erase.py
+@@ -197,8 +197,7 @@ if __name__ == '__main__':
+     pipe = DiffusionPipeline.from_pretrained(model_id, 
+                                              torch_dtype=torch_dtype, 
+                                              safety_checker=None,
+-                                             vae=None).to(device)
++                                            ).to(device)
+     
+     UCE(pipe, edit_concepts, guide_concepts, preserve_concepts, erase_scale, preserve_scale, lamb, save_dir, exp_name)

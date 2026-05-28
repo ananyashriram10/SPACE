@@ -1,0 +1,15 @@
+.ipynb_checkpoints
+__pycache__
+.DS_Store
+esd-models
+esd-images
+esd_models
+space-models
+space-images
+baseline-models
+baseline-assets
+baselines/external
+baselines/cache
+logs
+*.pdf
+esd-weights/

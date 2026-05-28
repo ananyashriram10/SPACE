@@ -1,0 +1,14 @@
+accelerate
+diffusers
+huggingface_hub
+lpips
+matplotlib
+numpy
+pandas
+Pillow
+safetensors
+torch
+torch-fidelity
+torchvision
+tqdm
+transformers

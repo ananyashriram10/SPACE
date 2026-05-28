@@ -1,0 +1,47 @@
+{
+  "status": "ok",
+  "candidates": [
+    {
+      "artist": "Van Gogh",
+      "method": "SPACE-v2R e175",
+      "n_pairs": 50.0,
+      "clip_vanilla": 0.3348279655456543,
+      "clip_method": 0.2824584190368652,
+      "clip_drop": 0.052369546508789,
+      "style_vanilla": 0.3037837779998779,
+      "style_method": 0.2389444526672363,
+      "style_drop": 0.0648393253326415,
+      "style_target_rate": 0.22,
+      "clip_image_similarity": 0.7320108413696289,
+      "lpips": 0.6368701916933059,
+      "fid": 262.59571808190924,
+      "kid": 0.0693322157206632,
+      "resnet_top1_agreement": 0.1,
+      "resnet_top5_overlap": 0.124,
+      "dino_similarity": 0.5328062808513642,
+      "run_mode": "research-method",
+      "passes_erasure": true
+    }
+  ],
+  "selected": {
+    "artist": "Van Gogh",
+    "method": "SPACE-v2R e175",
+    "n_pairs": 50.0,
+    "clip_vanilla": 0.3348279655456543,
+    "clip_method": 0.2824584190368652,
+    "clip_drop": 0.052369546508789,
+    "style_vanilla": 0.3037837779998779,
+    "style_method": 0.2389444526672363,
+    "style_drop": 0.0648393253326415,
+    "style_target_rate": 0.22,
+    "clip_image_similarity": 0.7320108413696289,
+    "lpips": 0.6368701916933059,
+    "fid": 262.59571808190924,
+    "kid": 0.0693322157206632,
+    "resnet_top1_agreement": 0.1,
+    "resnet_top5_overlap": 0.124,
+    "dino_similarity": 0.5328062808513642,
+    "run_mode": "research-method",
+    "passes_erasure": true
+  }
+}

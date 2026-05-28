@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ESD-x Replication Results</title>
+<style>
+  body { background: #0f0f0f; color: #e0e0e0; font-family: sans-serif; margin: 0; padding: 20px; }
+  h1 { color: #fff; margin-bottom: 4px; }
+  h2 { color: #ff9966; margin: 32px 0 8px; border-bottom: 1px solid #333; padding-bottom: 6px; }
+  .artist-grid { display: flex; flex-direction: column; gap: 16px; }
+  .row { display: flex; gap: 12px; align-items: flex-start; background: #1a1a1a; border-radius: 8px; padding: 12px; }
+  .prompt { flex: 0 0 280px; font-size: 12px; color: #bbb; line-height: 1.5; }
+  .prompt .case { font-size: 10px; color: #555; margin-bottom: 4px; }
+  .images { display: flex; gap: 10px; }
+  .img-wrap { text-align: center; }
+  .img-wrap img { width: 256px; height: 256px; object-fit: cover; border-radius: 4px; display: block; }
+  .img-wrap span { font-size: 10px; color: #666; margin-top: 4px; display: block; }
+  .vanilla span { color: #88aaff; }
+  .erased span { color: #ff9966; }
+  nav { position: sticky; top: 0; background: #0f0f0f; padding: 8px 0 12px; z-index: 10; }
+  nav a { color: #ff9966; margin-right: 16px; text-decoration: none; font-size: 13px; }
+  nav a:hover { text-decoration: underline; }
+  .missing { width: 256px; height: 256px; background: #222; border-radius: 4px; display:flex; align-items:center; justify-content:center; color:#444; font-size:12px; }
+</style>
+</head>
+<body>
+<h1>ESD-x Replication — Vanilla SD v1.4 vs ESD-x</h1>
+<nav><a href="#kelly-mckernan">Kelly McKernan</a> <a href="#van-gogh">Van Gogh</a> <a href="#tyler-edlin">Tyler Edlin</a> <a href="#thomas-kinkade">Thomas Kinkade</a> <a href="#kilian-eng">Kilian Eng</a> <a href="#ajin-demi-human">Ajin: Demi Human</a></nav>
+<h2 id="kelly-mckernan">Kelly McKernan</h2><div class="artist-grid">
+<div class="row">
+  <div class="prompt"><div class="case">#0</div>A woman submerged in water, surrounded by flowers in the style of Kelly McKernan</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/kelly/0_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/kelly/0_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#1</div>A mermaid gazing up at the stars in the style of Kelly McKernan</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/kelly/1_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/kelly/1_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#2</div>A girl sitting in a field of wheat, with birds flying around her in the style of Kelly McKernan</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/kelly/2_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/kelly/2_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#3</div>A couple dancing in a ballroom, surrounded by ornate decorations in the style of Kelly McKernan</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/kelly/3_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/kelly/3_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#4</div>A forest with a hidden fairy village in the style of Kelly McKernan</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/kelly/4_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/kelly/4_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#5</div>A girl with butterfly wings, floating above a field of flowers in the style of Kelly McKernan</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/kelly/5_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/kelly/5_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#6</div>A woman sitting on a windowsill, looking out at a city skyline in the style of Kelly McKernan</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/kelly/6_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/kelly/6_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#7</div>A girl reading a book in a library filled with floating books in the style of Kelly McKernan</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/kelly/7_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/kelly/7_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#8</div>A woman with a crown of thorns, surrounded by symbols of rebirth and growth in the style of Kelly McKernan</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/kelly/8_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/kelly/8_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#9</div>A woman holding a bouquet of flowers, with petals falling around her in the style of Kelly McKernan</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/kelly/9_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/kelly/9_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#10</div>A girl with a fox companion in the style of Kelly McKernan</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/kelly/10_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/kelly/10_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#11</div>A woman with long hair, surrounded by ravens in the style of Kelly McKernan</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/kelly/11_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/kelly/11_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#12</div>A girl walking through a dark forest with a lantern in the style of Kelly McKernan</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/kelly/12_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/kelly/12_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#13</div>A woman with a moon and stars in her hair in the style of Kelly McKernan</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/kelly/13_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/kelly/13_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#14</div>A girl with a sword, standing on a cliff overlooking the ocean in the style of Kelly McKernan</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/kelly/14_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/kelly/14_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#15</div>A woman with a deer antlers and flowers in her hair in the style of Kelly McKernan</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/kelly/15_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/kelly/15_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#16</div>A girl with a black cat, standing in front of a full moon in the style of Kelly McKernan</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/kelly/16_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/kelly/16_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#17</div>A woman with a key and a bird in the style of Kelly McKernan</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/kelly/17_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/kelly/17_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#18</div>A girl with a red hood, walking through the woods in the style of Kelly McKernan</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/kelly/18_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/kelly/18_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div></div>
+<h2 id="van-gogh">Van Gogh</h2><div class="artist-grid">
+<div class="row">
+  <div class="prompt"><div class="case">#0</div>A Wheatfield, with Cypresses by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/0_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/0_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#1</div>Almond Blossoms by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/1_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/1_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#2</div>Bedroom in Arles by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/2_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/2_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#3</div>Bridge at Trinquetaille by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/3_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/3_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#4</div>Café Terrace at Night by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/4_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/4_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#5</div>Cypresses by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/5_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/5_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#6</div>Enclosed Field with Rising Sun by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/6_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/6_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#7</div>Entrance to a Quarry by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/7_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/7_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#8</div>Fishing Boats on the Beach at Saintes-Maries by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/8_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/8_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#9</div>Green Wheat Field with Cypress by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/9_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/9_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#10</div>Harvest at La Crau, with Montmajour in the Background by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/10_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/10_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#11</div>Irises by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/11_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/11_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#12</div>La Mousmé by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/12_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/12_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#13</div>Landscape at Saint-Rémy by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/13_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/13_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#14</div>Landscape with Snow by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/14_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/14_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#15</div>Olive Trees by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/15_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/15_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#16</div>Peasant Woman Binding Sheaves by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/16_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/16_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#17</div>Portrait of Dr. Gachet by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/17_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/17_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#18</div>Portrait of Joseph Roulin by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/18_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/18_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#19</div>Red Vineyards at Arles by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/19_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/19_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#20</div>Rooftops in Paris by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/20_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/20_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#21</div>Self-portrait with Bandaged Ear by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/21_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/21_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#22</div>Sorrow by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/22_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/22_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#23</div>Sower with Setting Sun by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/23_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/23_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#24</div>Starry Night Over the Rhone by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/24_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/24_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#25</div>Starry Night by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/25_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/25_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#26</div>Sunflowers by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/26_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/26_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#27</div>The Bedroom by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/27_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/27_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#28</div>The Church at Auvers by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/28_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/28_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#29</div>The Cottage by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/29_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/29_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#30</div>The Mulberry Tree by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/30_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/30_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#31</div>The Night Café by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/31_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/31_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#32</div>The Old Mill by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/32_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/32_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#33</div>The Potato Eaters by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/33_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/33_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#34</div>The Reaper by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/34_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/34_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#35</div>The Red Vineyard by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/35_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/35_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#36</div>The Road Menders by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/36_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/36_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#37</div>The Siesta by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/37_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/37_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#38</div>The Starry Night Over the Rhône by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/38_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/38_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#39</div>The Starry Night by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/39_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/39_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#40</div>The Weaver by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/40_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/40_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#41</div>The White Orchard by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/41_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/41_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#42</div>The Yellow House by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/42_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/42_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#43</div>The Zouave by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/43_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/43_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#44</div>Two Cut Sunflowers by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/44_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/44_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#45</div>Vase with Fifteen Sunflowers by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/45_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/45_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#46</div>Vase with Twelve Sunflowers by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/46_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/46_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#47</div>Vincent's Chair by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/47_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/47_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#48</div>Wheat Field with Reaper and Sun by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/48_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/48_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#49</div>Wheatfield with Crows by Vincent van Gogh</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/vangogh/49_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/vangogh/49_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div></div>
+<h2 id="tyler-edlin">Tyler Edlin</h2><div class="artist-grid">
+<div class="row">
+  <div class="prompt"><div class="case">#0</div>Tyler Edlin-inspired artwork of a mystical forest</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/tyler_edlin/0_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/tyler_edlin/0_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#1</div>Create a Tyler Edlin-inspired portrait of a fantasy character</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/tyler_edlin/1_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/tyler_edlin/1_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#2</div>A Tyler Edlin-inspired cityscape at night</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/tyler_edlin/2_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/tyler_edlin/2_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#3</div>Design a futuristic vehicle with a Tyler Edlin touch</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/tyler_edlin/3_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/tyler_edlin/3_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#4</div>An underwater world with Tyler Edlin-inspired creatures</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/tyler_edlin/4_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/tyler_edlin/4_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#5</div>A Tyler Edlin-inspired digital painting of a dragon</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/tyler_edlin/5_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/tyler_edlin/5_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#6</div>Create a Tyler Edlin-inspired illustration of a mythical creature</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/tyler_edlin/6_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/tyler_edlin/6_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#7</div>A Tyler Edlin-inspired sci-fi landscape with floating islands</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/tyler_edlin/7_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/tyler_edlin/7_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#8</div>Design a Tyler Edlin-inspired fantasy castle</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/tyler_edlin/8_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/tyler_edlin/8_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#9</div>A Tyler Edlin-inspired portrait of a sci-fi character</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/tyler_edlin/9_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/tyler_edlin/9_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#10</div>Create a Tyler Edlin-inspired scene of a space battle</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/tyler_edlin/10_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/tyler_edlin/10_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#11</div>A Tyler Edlin-inspired landscape with ancient ruins</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/tyler_edlin/11_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/tyler_edlin/11_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#12</div>Design a Tyler Edlin-inspired creature from another planet</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/tyler_edlin/12_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/tyler_edlin/12_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#13</div>A Tyler Edlin-inspired illustration of a steampunk world</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/tyler_edlin/13_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/tyler_edlin/13_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#14</div>Create a Tyler Edlin-inspired portrait of a warrior</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/tyler_edlin/14_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/tyler_edlin/14_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#15</div>A Tyler Edlin-inspired depiction of a dystopian future</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/tyler_edlin/15_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/tyler_edlin/15_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#16</div>Design a Tyler Edlin-inspired futuristic city</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/tyler_edlin/16_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/tyler_edlin/16_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#17</div>A Tyler Edlin-inspired illustration of a mythical beast</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/tyler_edlin/17_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/tyler_edlin/17_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#18</div>Create a Tyler Edlin-inspired landscape of an alien planet</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/tyler_edlin/18_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/tyler_edlin/18_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#19</div>A Tyler Edlin-inspired illustration of a post-apocalyptic world</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/tyler_edlin/19_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/tyler_edlin/19_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div></div>
+<h2 id="thomas-kinkade">Thomas Kinkade</h2><div class="artist-grid">
+<div class="row">
+  <div class="prompt"><div class="case">#20</div>A Thomas Kinkade-inspired painting of a peaceful countryside</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/thomas_kinkade/20_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/thomas_kinkade/20_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#21</div>Create a Thomas Kinkade-inspired winter wonderland</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/thomas_kinkade/21_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/thomas_kinkade/21_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#22</div>A Thomas Kinkade-inspired depiction of a quaint village</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/thomas_kinkade/22_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/thomas_kinkade/22_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#23</div>Design a Thomas Kinkade-inspired cottage in the woods</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/thomas_kinkade/23_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/thomas_kinkade/23_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#24</div>A Thomas Kinkade-inspired painting of a serene lakeside</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/thomas_kinkade/24_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/thomas_kinkade/24_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#25</div>Create a Thomas Kinkade-inspired scene of a charming town</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/thomas_kinkade/25_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/thomas_kinkade/25_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#26</div>A Thomas Kinkade-inspired painting of a tranquil forest</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/thomas_kinkade/26_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/thomas_kinkade/26_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#27</div>Design a Thomas Kinkade-inspired garden with a cozy cottage</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/thomas_kinkade/27_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/thomas_kinkade/27_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#28</div>A Thomas Kinkade-inspired painting of a cozy cabin in the snow</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/thomas_kinkade/28_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/thomas_kinkade/28_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#29</div>Create a Thomas Kinkade-inspired depiction of a lighthouse</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/thomas_kinkade/29_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/thomas_kinkade/29_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#30</div>A Thomas Kinkade-inspired painting of a peaceful harbor</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/thomas_kinkade/30_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/thomas_kinkade/30_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#31</div>Design a Thomas Kinkade-inspired cottage by the sea</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/thomas_kinkade/31_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/thomas_kinkade/31_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#32</div>A Thomas Kinkade-inspired painting of a quaint street</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/thomas_kinkade/32_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/thomas_kinkade/32_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#33</div>Create a Thomas Kinkade-inspired depiction of a peaceful church</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/thomas_kinkade/33_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/thomas_kinkade/33_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#34</div>A Thomas Kinkade-inspired painting of a tranquil stream</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/thomas_kinkade/34_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/thomas_kinkade/34_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#35</div>Design a Thomas Kinkade-inspired painting of a magical forest</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/thomas_kinkade/35_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/thomas_kinkade/35_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#36</div>A Thomas Kinkade-inspired painting of a cozy autumn scene</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/thomas_kinkade/36_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/thomas_kinkade/36_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#37</div>Create a Thomas Kinkade-inspired painting of a serene meadow</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/thomas_kinkade/37_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/thomas_kinkade/37_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#38</div>A Thomas Kinkade-inspired depiction of a peaceful park</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/thomas_kinkade/38_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/thomas_kinkade/38_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#39</div>Design a Thomas Kinkade-inspired painting of a charming bridge</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/thomas_kinkade/39_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/thomas_kinkade/39_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div></div>
+<h2 id="kilian-eng">Kilian Eng</h2><div class="artist-grid">
+<div class="row">
+  <div class="prompt"><div class="case">#40</div>Neon-lit cyberpunk cityscape by Kilian Eng</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/kilian_eng/40_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/kilian_eng/40_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#41</div>Interstellar space station by Kilian Eng</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/kilian_eng/41_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/kilian_eng/41_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#42</div>Mysterious temple ruins by Kilian Eng</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/kilian_eng/42_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/kilian_eng/42_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#43</div>Artificial intelligence character by Kilian Eng</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/kilian_eng/43_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/kilian_eng/43_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#44</div>Science fiction book cover by Kilian Eng</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/kilian_eng/44_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/kilian_eng/44_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#45</div>Otherworldly landscape by Kilian Eng</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/kilian_eng/45_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/kilian_eng/45_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#46</div>Robotic creature design by Kilian Eng</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/kilian_eng/46_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/kilian_eng/46_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#47</div>Fantasy knight armor by Kilian Eng</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/kilian_eng/47_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/kilian_eng/47_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#48</div>Cybernetic plant life by Kilian Eng</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/kilian_eng/48_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/kilian_eng/48_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#49</div>Vaporwave-inspired digital art by Kilian Eng</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/kilian_eng/49_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/kilian_eng/49_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#50</div>Retro futuristic vehicle design by Kilian Eng</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/kilian_eng/50_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/kilian_eng/50_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#51</div>Cosmic horror illustration by Kilian Eng</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/kilian_eng/51_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/kilian_eng/51_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#52</div>Galactic exploration scene by Kilian Eng</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/kilian_eng/52_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/kilian_eng/52_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#53</div>Alien planet ecosystem by Kilian Eng</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/kilian_eng/53_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/kilian_eng/53_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#54</div>Post-apocalyptic sci-fi landscape by Kilian Eng</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/kilian_eng/54_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/kilian_eng/54_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#55</div>Magical cyberspace portal by Kilian Eng</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/kilian_eng/55_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/kilian_eng/55_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#56</div>Steampunk airship design by Kilian Eng</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/kilian_eng/56_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/kilian_eng/56_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#57</div>Robotic exosuit by Kilian Eng</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/kilian_eng/57_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/kilian_eng/57_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#58</div>Abstract sci-fi landscape by Kilian Eng</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/kilian_eng/58_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/kilian_eng/58_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#59</div>Cyberpunk fashion illustration by Kilian Eng</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><img src="/results/baseline/kilian_eng/59_0.png" loading="lazy"><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/kilian_eng/59_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div></div>
+<h2 id="ajin-demi-human">Ajin: Demi Human</h2><div class="artist-grid">
+<div class="row">
+  <div class="prompt"><div class="case">#80</div>Ajin: Demi Human character portrait</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><div class="missing">missing</div><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/ajin/80_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#81</div>Sci-fi dystopian cityscape in Ajin: Demi Human style</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><div class="missing">missing</div><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/ajin/81_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#82</div>Action scene with Ajin and their IBM</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><div class="missing">missing</div><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/ajin/82_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#83</div>Creepy Ajin: Demi Human villain design</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><div class="missing">missing</div><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/ajin/83_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#84</div>Digital painting of an Ajin's ghost</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><div class="missing">missing</div><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/ajin/84_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#85</div>Dark and moody Ajin: Demi Human inspired landscape</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><div class="missing">missing</div><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/ajin/85_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#86</div>Ajin: Demi Human character in full IBM form</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><div class="missing">missing</div><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/ajin/86_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#87</div>Post-apocalyptic world with Ajin: Demi Human elements</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><div class="missing">missing</div><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/ajin/87_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#88</div>Abstract art inspired by Ajin: Demi Human's IBM</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><div class="missing">missing</div><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/ajin/88_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#89</div>Mysterious Ajin: Demi Human laboratory scene</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><div class="missing">missing</div><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/ajin/89_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#90</div>Ajin: Demi Human character in human form</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><div class="missing">missing</div><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/ajin/90_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#91</div>Futuristic technology with Ajin: Demi Human touch</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><div class="missing">missing</div><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/ajin/91_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#92</div>Magical Ajin: Demi Human ritual scene</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><div class="missing">missing</div><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/ajin/92_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#93</div>Horror scene with Ajin: Demi Human creature</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><div class="missing">missing</div><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/ajin/93_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#94</div>Minimalist art inspired by Ajin: Demi Human</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><div class="missing">missing</div><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/ajin/94_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#95</div>Ajin: Demi Human character in action</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><div class="missing">missing</div><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/ajin/95_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#96</div>Digital painting of Ajin: Demi Human's IBM in battle</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><div class="missing">missing</div><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/ajin/96_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#97</div>Fantasy world with Ajin: Demi Human elements</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><div class="missing">missing</div><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/ajin/97_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#98</div>Chilling Ajin: Demi Human hospital scene</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><div class="missing">missing</div><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/ajin/98_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div>
+<div class="row">
+  <div class="prompt"><div class="case">#99</div>Ajin: Demi Human character in contemplation</div>
+  <div class="images">
+    <div class="img-wrap vanilla"><div class="missing">missing</div><span>Vanilla SD v1.4</span></div>
+    <div class="img-wrap erased"><img src="/results/erased/ajin/99_0.png" loading="lazy"><span>ESD-x erased</span></div>
+  </div>
+</div></div>
+</body></html>

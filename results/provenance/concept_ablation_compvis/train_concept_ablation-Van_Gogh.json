@@ -1,0 +1,15 @@
+{
+  "created_utc": "2026-04-23T14:46:48.671909+00:00",
+  "method": "Concept Ablation",
+  "artist": "Van Gogh",
+  "run_type": "official-paper",
+  "official_repo_url": "https://github.com/nupurkmr9/concept-ablation",
+  "official_repo_dir": "/workspace/space-claude-implementation/baselines/external/concept-ablation",
+  "official_repo_commit": "c11fb1bdc7cd97ea65877b0d41722f5e3ef2561f",
+  "official_repo_dirty_status": "M compvis/src/filter.py",
+  "command": "use official checkpoint /workspace/space-claude-implementation/baseline-models/concept_ablation_compvis/official_weights/concept_ablation-Van_Gogh.ckpt",
+  "outputs": [
+    "/workspace/space-claude-implementation/baseline-models/concept_ablation_compvis/official_weights/concept_ablation-Van_Gogh.ckpt"
+  ],
+  "prompt_manifest": null
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "artist": "Kelly McKernan",
+    "n_pairs": 19,
+    "clip_vanilla": 0.3509346660814787,
+    "clip_erased": 0.3099238586425781,
+    "clip_delta": 0.04101080743890062,
+    "clip_preservation": 0.7191571844251532,
+    "lpips": 0.5791911812205064,
+    "fid": 305.6245228001643
+  },
+  {
+    "artist": "Van Gogh",
+    "n_pairs": 50,
+    "clip_vanilla": 0.33482795867919923,
+    "clip_erased": 0.2755030906677246,
+    "clip_delta": 0.05932486801147463,
+    "clip_preservation": 0.7288552552461625,
+    "lpips": 0.6587318587303161,
+    "fid": 259.19104964389317
+  },
+  {
+    "artist": "Tyler Edlin",
+    "n_pairs": 20,
+    "clip_vanilla": 0.30303075504302973,
+    "clip_erased": 0.27142830753326413,
+    "clip_delta": 0.0316024475097656,
+    "clip_preservation": 0.6356647267937661,
+    "lpips": 0.6260129362344742,
+    "fid": 298.36941306868397
+  },
+  {
+    "artist": "Thomas Kinkade",
+    "n_pairs": 20,
+    "clip_vanilla": 0.34788257598876954,
+    "clip_erased": 0.2590949878692627,
+    "clip_delta": 0.08878758811950682,
+    "clip_preservation": 0.6746008068323135,
+    "lpips": 0.6512231513857841,
+    "fid": 264.9321952506942
+  },
+  {
+    "artist": "Kilian Eng",
+    "n_pairs": 20,
+    "clip_vanilla": 0.30177098846435546,
+    "clip_erased": 0.24877228355407716,
+    "clip_delta": 0.052998704910278305,
+    "clip_preservation": 0.7475377023220062,
+    "lpips": 0.6602815181016922,
+    "fid": 298.2759794357341
+  },
+  {
+    "artist": "Ajin: Demi Human",
+    "n_pairs": 20,
+    "clip_vanilla": 0.3020779914855957,
+    "clip_erased": 0.19384907531738282,
+    "clip_delta": 0.1082289161682129,
+    "clip_preservation": 0.5199571162462234,
+    "lpips": 0.670627573132515,
+    "fid": 390.9350701796101
+  }
+]
