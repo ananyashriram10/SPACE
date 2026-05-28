@@ -1,0 +1,15 @@
+{
+  "created_utc": "2026-05-28T20:05:07.229634+00:00",
+  "method": "UCE",
+  "artist": "Andy Warhol",
+  "run_type": "official-paper",
+  "official_repo_url": "https://github.com/rohitgandikota/unified-concept-editing",
+  "official_repo_dir": "/SPACE/baselines/external/unified-concept-editing",
+  "official_repo_commit": "7c724d9d7d19190e9bd33fe62fb656f1df87cd8e",
+  "official_repo_dirty_status": "M trainscripts/uce_sd_erase.py",
+  "command": "python trainscripts/uce_sd_erase.py --model_id CompVis/stable-diffusion-v1-4 --edit_concepts Andy Warhol --guide_concepts art --preserve_concepts Monet; Rembrandt; Picasso --device cuda:0 --concept_type art --erase_scale 1 --preserve_scale 1 --lamb 0.5 --expand_prompts false --save_dir /SPACE/baseline-models/uce --exp_name uce-Andy_Warhol",
+  "outputs": [
+    "/SPACE/baseline-models/uce/uce-Andy_Warhol.safetensors"
+  ],
+  "prompt_manifest": null
+}

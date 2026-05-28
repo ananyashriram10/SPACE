@@ -1,0 +1,16 @@
+{
+  "created_utc": "2026-05-28T20:09:20.480415+00:00",
+  "method": "UCE",
+  "artist": "Andy Warhol",
+  "run_type": "official-paper",
+  "official_repo_url": "https://github.com/rohitgandikota/unified-concept-editing",
+  "official_repo_dir": "/SPACE/baselines/external/unified-concept-editing",
+  "official_repo_commit": "7c724d9d7d19190e9bd33fe62fb656f1df87cd8e",
+  "official_repo_dirty_status": "M trainscripts/uce_sd_erase.py",
+  "command": "python evalscripts/generate-images-sd.py --model_id CompVis/stable-diffusion-v1-4 --uce_model_path /SPACE/baseline-models/uce/uce-Andy_Warhol.safetensors --prompts_path /SPACE/baselines/cache/official_prompts/uce/uce-Andy_Warhol.csv --save_path /SPACE/results/uce --exp_name uce-Andy_Warhol --num_images_per_prompt 1 --num_inference_steps 50 --guidance_scale 7.5 --device cuda:0",
+  "outputs": [
+    "/SPACE/baseline-models/uce/uce-Andy_Warhol.safetensors",
+    "/SPACE/results/uce/uce-Andy_Warhol"
+  ],
+  "prompt_manifest": "/SPACE/baselines/cache/official_prompts/uce/uce-Andy_Warhol.manifest.json"
+}

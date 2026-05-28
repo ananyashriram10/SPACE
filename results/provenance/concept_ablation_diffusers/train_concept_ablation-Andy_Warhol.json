@@ -1,0 +1,15 @@
+{
+  "created_utc": "2026-05-28T20:35:33.603020+00:00",
+  "method": "Concept Ablation",
+  "artist": "Andy Warhol",
+  "run_type": "official-diffusers",
+  "official_repo_url": "https://github.com/nupurkmr9/concept-ablation",
+  "official_repo_dir": "/SPACE/baselines/external/concept-ablation",
+  "official_repo_commit": "c11fb1bdc7cd97ea65877b0d41722f5e3ef2561f",
+  "official_repo_dirty_status": "M compvis/src/filter.py\n M diffusers/model_pipeline.py\n?? diffusers/__pycache__/",
+  "command": "accelerate launch train.py --pretrained_model_name_or_path=CompVis/stable-diffusion-v1-4 --output_dir=/SPACE/baseline-models/concept_ablation_diffusers/concept_ablation-Andy_Warhol --class_data_dir=/SPACE/baselines/cache/concept_ablation_diffusers/samples_painting --class_prompt=painting --caption_target Andy Warhol --concept_type style --resolution=512 --train_batch_size=4 --learning_rate=2e-6 --max_train_steps=200 --scale_lr --hflip --noaug --parameter_group cross-attn --enable_xformers_memory_efficient_attention",
+  "outputs": [
+    "/SPACE/baseline-models/concept_ablation_diffusers/concept_ablation-Andy_Warhol"
+  ],
+  "prompt_manifest": null
+}
