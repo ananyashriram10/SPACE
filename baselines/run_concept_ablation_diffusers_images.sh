@@ -12,6 +12,12 @@ STEPS="${STEPS:-50}"
 CFG="${CFG:-6.0}"
 ETA="${ETA:-1.0}"
 DEVICE="${DEVICE:-cuda:0}"
+ONLY_ARTIST="${ONLY_ARTIST:-}"
+
+should_run() {
+  local artist="$1"
+  [ -z "$ONLY_ARTIST" ] || [ "$artist" = "$ONLY_ARTIST" ]
+}
 
 mkdir -p "$OUT" "$LOGS"
 
@@ -61,10 +67,10 @@ run_gen() {
     2>&1 | tee "$LOGS/concept_ablation_diffusers_images_$log"
 }
 
-run_gen 1 7 "Kelly McKernan" "concept_ablation-Kelly_McKernan" "$ROOT/data/kelly_prompts.csv" "" "kelly.log"
-run_gen 2 7 "Van Gogh" "concept_ablation-Van_Gogh" "$ROOT/data/vangogh_prompts.csv" "" "vangogh.log"
-run_gen 3 7 "Tyler Edlin" "concept_ablation-Tyler_Edlin" "$ROOT/data/short_niche_art_prompts.csv" "Tyler Edlin" "tyler_edlin.log"
-run_gen 4 7 "Thomas Kinkade" "concept_ablation-Thomas_Kinkade" "$ROOT/data/short_niche_art_prompts.csv" "Thomas Kinkade" "thomas_kinkade.log"
-run_gen 5 7 "Kilian Eng" "concept_ablation-Kilian_Eng" "$ROOT/data/short_niche_art_prompts.csv" "Kilian Eng" "kilian_eng.log"
-run_gen 6 7 "Ajin: Demi Human" "concept_ablation-Ajin_Demi_Human" "$ROOT/data/short_niche_art_prompts.csv" "Ajin: Demi Human" "ajin.log"
-run_gen 7 7 "Andy Warhol" "concept_ablation-Andy_Warhol" "$ROOT/data/andy_warhol_prompts.csv" "Andy Warhol" "andy_warhol.log"
+should_run "Kelly McKernan" && run_gen 1 7 "Kelly McKernan" "concept_ablation-Kelly_McKernan" "$ROOT/data/kelly_prompts.csv" "" "kelly.log"
+should_run "Van Gogh" && run_gen 2 7 "Van Gogh" "concept_ablation-Van_Gogh" "$ROOT/data/vangogh_prompts.csv" "" "vangogh.log"
+should_run "Tyler Edlin" && run_gen 3 7 "Tyler Edlin" "concept_ablation-Tyler_Edlin" "$ROOT/data/short_niche_art_prompts.csv" "Tyler Edlin" "tyler_edlin.log"
+should_run "Thomas Kinkade" && run_gen 4 7 "Thomas Kinkade" "concept_ablation-Thomas_Kinkade" "$ROOT/data/short_niche_art_prompts.csv" "Thomas Kinkade" "thomas_kinkade.log"
+should_run "Kilian Eng" && run_gen 5 7 "Kilian Eng" "concept_ablation-Kilian_Eng" "$ROOT/data/short_niche_art_prompts.csv" "Kilian Eng" "kilian_eng.log"
+should_run "Ajin: Demi Human" && run_gen 6 7 "Ajin: Demi Human" "concept_ablation-Ajin_Demi_Human" "$ROOT/data/short_niche_art_prompts.csv" "Ajin: Demi Human" "ajin.log"
+should_run "Andy Warhol" && run_gen 7 7 "Andy Warhol" "concept_ablation-Andy_Warhol" "$ROOT/data/andy_warhol_prompts.csv" "Andy Warhol" "andy_warhol.log"
