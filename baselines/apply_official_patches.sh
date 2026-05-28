@@ -115,4 +115,42 @@ PY
 
 patch_ca_filter_lazy_sscd
 
+# Patch: shim retrieve_timesteps for diffusers < 0.27 in CA diffusers model_pipeline.py
+CA_DIFFUSERS_PIPELINE="$ROOT/baselines/external/concept-ablation/diffusers/model_pipeline.py"
+patch_ca_retrieve_timesteps() {
+  if [ ! -f "$CA_DIFFUSERS_PIPELINE" ]; then
+    echo "CA diffusers model_pipeline.py not found — skipping retrieve_timesteps patch"
+    return 0
+  fi
+  if ! grep -q "retrieve_timesteps" "$CA_DIFFUSERS_PIPELINE"; then
+    echo "Patch already applied: ca_retrieve_timesteps_shim"
+    return 0
+  fi
+  "$PYTHON_BIN" - <<'PY'
+import re
+from pathlib import Path
+p = Path("$CA_DIFFUSERS_PIPELINE")
+text = p.read_text()
+old = "from diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion import retrieve_timesteps, rescale_noise_cfg, StableDiffusionPipelineOutput"
+new = """try:
+    from diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion import retrieve_timesteps, rescale_noise_cfg, StableDiffusionPipelineOutput
+except ImportError:
+    from diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion import rescale_noise_cfg, StableDiffusionPipelineOutput
+    def retrieve_timesteps(scheduler, num_inference_steps, device, timesteps=None, **kwargs):
+        if timesteps is not None:
+            scheduler.set_timesteps(timesteps=timesteps, device=device, **kwargs)
+        else:
+            scheduler.set_timesteps(num_inference_steps, device=device, **kwargs)
+        return scheduler.timesteps, len(scheduler.timesteps)"""
+if old in text:
+    text = text.replace(old, new)
+    p.write_text(text)
+    print("Applied patch: ca_retrieve_timesteps_shim")
+else:
+    print("retrieve_timesteps import not found in expected form — skipping")
+PY
+}
+
+patch_ca_retrieve_timesteps
+
 echo "Official compatibility patches ready."
