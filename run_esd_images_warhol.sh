@@ -14,4 +14,5 @@ DEVICE="${DEVICE:-cuda:0}"
   --num_inference_steps "${EVAL_STEPS:-20}" \
   --num_samples "${NUM_SAMPLES:-5}" \
   --artist_filter "Andy Warhol" \
+  --model_name_override "andy_warhol" \
   2>&1 | tee "$ROOT/logs/esd_images_andy_warhol.log"
