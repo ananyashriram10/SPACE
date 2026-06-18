@@ -153,4 +153,27 @@ PY
 
 patch_ca_retrieve_timesteps
 
+# Patch: remove image_encoder kwarg from CustomDiffusionPipeline.__init__ (diffusers < 0.25)
+patch_ca_image_encoder() {
+  if [ ! -f "$CA_DIFFUSERS_PIPELINE" ]; then
+    echo "CA diffusers model_pipeline.py not found — skipping image_encoder patch"
+    return 0
+  fi
+  if ! grep -q "image_encoder=image_encoder" "$CA_DIFFUSERS_PIPELINE"; then
+    echo "Patch already applied: ca_image_encoder_compat"
+    return 0
+  fi
+  "$PYTHON_BIN" - "$CA_DIFFUSERS_PIPELINE" <<'PY'
+import re, sys
+from pathlib import Path
+p = Path(sys.argv[1])
+text = p.read_text()
+text = re.sub(r'\s*image_encoder=image_encoder,?\n', '\n', text)
+p.write_text(text)
+print("Applied patch: ca_image_encoder_compat (removed image_encoder kwarg for diffusers<0.25)")
+PY
+}
+
+patch_ca_image_encoder
+
 echo "Official compatibility patches ready."
