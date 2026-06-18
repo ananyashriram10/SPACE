@@ -59,7 +59,7 @@ fi
 if [ "${SKIP_CA_TRAIN:-0}" != "1" ]; then
   echo ""
   echo "[5/8] Training Concept Ablation (diffusers)..."
-  ONLY_ARTIST="Andy Warhol" bash "$ROOT/baselines/run_concept_ablation_diffusers_training.sh"
+  ONLY_ARTIST="Andy Warhol" CA_SAMPLES=10 bash "$ROOT/baselines/run_concept_ablation_diffusers_training.sh"
   echo "[5/8] CA training DONE"
 else
   echo "[5/8] SKIPPED (SKIP_CA_TRAIN=1)"
@@ -89,7 +89,7 @@ fi
 if [ "${SKIP_UCE_IMAGES:-0}" != "1" ]; then
   echo ""
   echo "[8/8] Generating UCE images..."
-  ONLY_ARTIST="Andy Warhol" bash "$ROOT/baselines/run_uce_images.sh"
+  ONLY_ARTIST="Andy Warhol" UCE_SAMPLES=10 bash "$ROOT/baselines/run_uce_images.sh"
   echo "[8/8] UCE images DONE"
 else
   echo "[8/8] SKIPPED (SKIP_UCE_IMAGES=1)"

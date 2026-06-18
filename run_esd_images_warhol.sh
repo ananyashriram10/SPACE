@@ -11,8 +11,8 @@ DEVICE="${DEVICE:-cuda:0}"
   --save_path "$ROOT/results/erased" \
   --device "$DEVICE" \
   --guidance_scale "${EVAL_GUIDANCE_SCALE:-7.5}" \
-  --num_inference_steps "${EVAL_STEPS:-20}" \
-  --num_samples "${NUM_SAMPLES:-5}" \
+  --num_inference_steps "${EVAL_STEPS:-50}" \
+  --num_samples "${NUM_SAMPLES:-10}" \
   --artist_filter "Andy Warhol" \
   --model_name_override "andy_warhol" \
   2>&1 | tee "$ROOT/logs/esd_images_andy_warhol.log"

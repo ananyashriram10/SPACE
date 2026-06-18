@@ -34,7 +34,7 @@ echo ""
   --save_path "$ROOT/$OUT_DIR" \
   --device "$DEVICE" \
   --guidance_scale "${EVAL_GUIDANCE_SCALE:-7.5}" \
-  --num_inference_steps "${EVAL_STEPS:-20}" \
+  --num_inference_steps "${EVAL_STEPS:-50}" \
   --num_samples "${NUM_SAMPLES:-5}" \
   --artist_filter "$TARGET_ARTIST_FILTER" \
   2>&1 | tee "$ROOT/logs/space_images_${EXP_NAME,,}.log"

@@ -12,6 +12,7 @@ STEPS="${STEPS:-50}"
 CFG="${CFG:-6.0}"
 ETA="${ETA:-1.0}"
 DEVICE="${DEVICE:-cuda:0}"
+CA_SAMPLES="${CA_SAMPLES:-1}"
 ONLY_ARTIST="${ONLY_ARTIST:-}"
 
 should_run() {
@@ -63,6 +64,7 @@ run_gen() {
     --num_inference_steps "$STEPS" \
     --guidance_scale "$CFG" \
     --eta "$ETA" \
+    --num_samples "$CA_SAMPLES" \
     --device "$DEVICE" \
     2>&1 | tee "$LOGS/concept_ablation_diffusers_images_$log"
 }

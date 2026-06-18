@@ -13,6 +13,7 @@ PROVENANCE="$ROOT/results/provenance/uce"
 STEPS="${STEPS:-50}"
 CFG="${CFG:-7.5}"
 DEVICE="${DEVICE:-cuda:0}"
+UCE_SAMPLES="${UCE_SAMPLES:-1}"
 ONLY_ARTIST="${ONLY_ARTIST:-}"
 source "$ROOT/baselines/progress.sh"
 source "$ROOT/baselines/use_venv.sh"
@@ -87,7 +88,7 @@ run_gen() {
       --prompts_path "$prompt_csv" \
       --save_path "$OUT" \
       --exp_name "$exp" \
-      --num_images_per_prompt 1 \
+      --num_images_per_prompt "$UCE_SAMPLES" \
       --num_inference_steps "$STEPS" \
       --guidance_scale "$CFG" \
       --device "$DEVICE"

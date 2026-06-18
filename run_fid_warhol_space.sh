@@ -19,7 +19,7 @@ echo "Step 1/1: Generating SPACE erased model images..."
   --n_images "$FID_N" \
   --device "$DEVICE" \
   --guidance_scale 7.5 \
-  --num_inference_steps 20
+  --num_inference_steps 50
 
 echo "Images ready at $SPACE_SAVE_PATH"
 echo "Compute FID against real COCO val2014 images with:"
