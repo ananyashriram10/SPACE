@@ -26,4 +26,5 @@ imageio==2.9.0
 imageio-ffmpeg==0.4.2
 invisible-watermark
 openai
+xformers
 git+https://github.com/openai/CLIP.git@main#egg=clip
