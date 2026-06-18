@@ -99,7 +99,7 @@ fi
 if [ "${SKIP_CA_IMAGES:-0}" != "1" ]; then
   echo ""
   echo "[9/9] Generating CA images..."
-  ONLY_ARTIST="Andy Warhol" bash "$ROOT/baselines/run_concept_ablation_diffusers_images.sh"
+  ONLY_ARTIST="Andy Warhol" CA_SAMPLES=10 bash "$ROOT/baselines/run_concept_ablation_diffusers_images.sh"
   echo "[9/9] CA images DONE"
 else
   echo "[9/9] SKIPPED (SKIP_CA_IMAGES=1)"
