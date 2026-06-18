@@ -15,7 +15,7 @@ MODEL_NAME="${MODEL_NAME:-CompVis/stable-diffusion-v1-4}"
 STEPS="${STEPS:-200}"
 BATCH="${BATCH:-4}"
 LR="${LR:-2e-6}"
-XFORMERS_FLAG="${XFORMERS_FLAG:---enable_xformers_memory_efficient_attention}"
+XFORMERS_FLAG="${XFORMERS_FLAG:-}"
 ONLY_ARTIST="${ONLY_ARTIST:-}"
 
 should_run() {
