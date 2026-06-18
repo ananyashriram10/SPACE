@@ -126,10 +126,10 @@ patch_ca_retrieve_timesteps() {
     echo "Patch already applied: ca_retrieve_timesteps_shim"
     return 0
   fi
-  "$PYTHON_BIN" - <<'PY'
-import re
+  "$PYTHON_BIN" - "$CA_DIFFUSERS_PIPELINE" <<'PY'
+import re, sys
 from pathlib import Path
-p = Path("$CA_DIFFUSERS_PIPELINE")
+p = Path(sys.argv[1])
 text = p.read_text()
 old = "from diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion import retrieve_timesteps, rescale_noise_cfg, StableDiffusionPipelineOutput"
 new = """try:
