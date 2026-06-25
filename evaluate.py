@@ -365,26 +365,25 @@ class DINOScorer:
 
 def compute_distribution_metrics(dir_a, dir_b):
     try:
-        import torch_fidelity
+        from cleanfid import fid as cleanfid
         n_a = len(all_pngs(dir_a))
         n_b = len(all_pngs(dir_b))
         if n_a == 0 or n_b == 0:
             return {"fid": None, "kid": None}
-        kid_subset_size = min(1000, n_a, n_b)
-        metrics = torch_fidelity.calculate_metrics(
-            input1=dir_a,
-            input2=dir_b,
-            cuda=torch.cuda.is_available(),
-            fid=True,
-            kid=True,
-            kid_subset_size=kid_subset_size,
-            isc=False,
-            verbose=False,
+        device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        fid_value = cleanfid.compute_fid(
+            dir_a,
+            dir_b,
+            mode="clean",
+            device=device,
         )
-        return {
-            "fid": float(metrics["frechet_inception_distance"]),
-            "kid": float(metrics["kernel_inception_distance_mean"]),
-        }
+        kid_value = cleanfid.compute_kid(
+            dir_a,
+            dir_b,
+            mode="clean",
+            device=device,
+        )
+        return {"fid": float(fid_value), "kid": float(kid_value)}
     except Exception as exc:
         print(f"Distribution metrics failed for {dir_b}: {exc}")
         return {"fid": None, "kid": None}
