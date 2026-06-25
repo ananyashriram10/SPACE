@@ -19,6 +19,7 @@ if [ "${SKIP_BASELINE:-0}" != "1" ]; then
   python generate_esd_old.py \
     --prompts_path data/andy_warhol_prompts.csv \
     --save_path results/baseline/andy_warhol \
+    --num_samples 10 \
     2>&1 | tee logs/baseline_andy_warhol.log
   echo "[1/8] Baseline DONE"
 else
