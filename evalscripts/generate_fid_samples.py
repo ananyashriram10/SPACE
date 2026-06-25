@@ -36,7 +36,7 @@ def generate_fid_samples(
 ):
     os.makedirs(save_path, exist_ok=True)
 
-    pipe = DiffusionPipeline.from_pretrained(base_model, torch_dtype=torch_dtype).to(device)
+    pipe = DiffusionPipeline.from_pretrained(base_model, torch_dtype=torch_dtype, safety_checker=None).to(device)
     pipe.set_progress_bar_config(disable=True)
 
     if esd_path is not None:
