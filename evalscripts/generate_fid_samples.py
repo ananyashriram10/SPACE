@@ -33,6 +33,7 @@ def generate_fid_samples(
     guidance_scale=7.5,
     num_inference_steps=20,
     component=None,
+    batch_size=8,
 ):
     os.makedirs(save_path, exist_ok=True)
 
@@ -61,17 +62,20 @@ def generate_fid_samples(
         print(f"Resuming: {already}/{len(df)} already done, skipping those.")
 
     from tqdm import tqdm
-    for _, row in tqdm(df.iterrows(), total=len(df), desc=os.path.basename(save_path)):
-        out_path = os.path.join(save_path, f"{row.image_id}.png")
-        if os.path.exists(out_path):
-            continue
-        image = pipe(
-            str(row.prompt),
-            generator=make_generator(int(row.evaluation_seed)),
+    rows = [row for _, row in df.iterrows() if not os.path.exists(os.path.join(save_path, f"{row.image_id}.png"))]
+    for i in tqdm(range(0, len(rows), batch_size), desc=os.path.basename(save_path)):
+        batch = rows[i:i + batch_size]
+        prompts = [str(r.prompt) for r in batch]
+        out_paths = [os.path.join(save_path, f"{r.image_id}.png") for r in batch]
+        generator = make_generator(int(batch[0].evaluation_seed))
+        images = pipe(
+            prompts,
+            generator=generator,
             num_inference_steps=num_inference_steps,
             guidance_scale=guidance_scale,
-        ).images[0]
-        image.save(out_path)
+        ).images
+        for image, out_path in zip(images, out_paths):
+            image.save(out_path)
 
     print(f"Done. {len(df)} images in {save_path}")
 
@@ -87,6 +91,7 @@ if __name__ == "__main__":
     parser.add_argument("--device", default="cuda:0")
     parser.add_argument("--guidance_scale", type=float, default=7.5)
     parser.add_argument("--num_inference_steps", type=int, default=20)
+    parser.add_argument("--batch_size", type=int, default=8)
     args = parser.parse_args()
 
     generate_fid_samples(
@@ -99,4 +104,5 @@ if __name__ == "__main__":
         guidance_scale=args.guidance_scale,
         num_inference_steps=args.num_inference_steps,
         component=args.component,
+        batch_size=args.batch_size,
     )
