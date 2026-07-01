@@ -11,9 +11,13 @@ CHECKPOINT="$ROOT/space-models/sd/space-Van_Gogh.safetensors"
 mkdir -p "$ROOT/logs"
 
 # ── Step 1: Train SPACE for Van Gogh ────────────────────────────
-echo "[1/2] Training SPACE for Van Gogh..."
-bash "$ROOT/run_space_training.sh"
-echo "[1/2] SPACE training DONE"
+if [ -f "$CHECKPOINT" ] && [ "${FORCE_RETRAIN:-0}" != "1" ]; then
+  echo "[1/2] Checkpoint exists, skipping training: $CHECKPOINT"
+else
+  echo "[1/2] Training SPACE for Van Gogh..."
+  bash "$ROOT/run_space_training.sh"
+  echo "[1/2] SPACE training DONE"
+fi
 
 # ── Step 2: Generate 30k FID images ─────────────────────────────
 echo "[2/2] Generating 30k FID samples..."
