@@ -77,6 +77,7 @@
     "resnet_top1_agreement": 0.14,
     "resnet_top5_overlap": 0.212,
     "dino_similarity": 0.6168090009689331,
+    "fid_coco_30k": 17.11841739567643,
     "run_mode": "research-method"
   },
   {
